@@ -9,11 +9,13 @@
 <body>
     <h1>GitHub API</h1>
 
-    <div>
-        <label for="">Username</label>
-        <input type="text" id="username" />
+    <div class="search-container">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Digite um usuário do GitHub..."/>
         <button onClick="getApi()">Search</button>
     </div>
+
+    <div id="user-profile"></div>
 
     <div class="container">
         <ul id="repo-list"></ul>
